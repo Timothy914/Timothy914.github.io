@@ -1,0 +1,159 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: rgba(0, 0, 0, 0.5);
+    background-image: url('TianjinNight.jpg');
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+    max-width: 960px;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    transition: height 0.4s ease;  /* 平滑过渡 */
+    z-index: 1000;  /* 保证header始终在其他内容之上 */
+}
+
+.header-placeholder {
+    width: 100%;
+    height: 100vh;  /* 初始时与header高度相同 */
+}
+
+header h1 {
+    font-size: 2.5em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #aaa; /* 更明显的颜色变化 */
+}
+
+main {
+    padding: 20px 0;
+}
+
+main section {
+    margin-bottom: 20px;
+}
+
+main section h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.8em;
+}
+
+#fixed-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    transition: background 0.4s ease; /* 平滑过渡 */
+}
+
+#fixed-header.scroll {
+    position: fixed;
+    /* top: 0; 定位到页面顶部 */
+    /* left: 0; 定位到页面左侧 */
+    height: 10vh;
+    width: 100%; /* 保证宽度和视口一致 */
+    background: rgba(0, 0, 0, 1);
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header.scroll {
+    position: fixed;
+    top: 0;
+    height: 10vh;
+    width: 100%; /* 保证宽度和视口一致 */
+}
+
+.header-placeholder.scroll {
+    width: 100%;
+    height: 20vh;  /* 初始时与header高度相同 */
+    transition: all 0.4s ease;
+}
+
+header h1, nav {
+    transition: all 0.4s ease;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* 新增 */
+    padding-bottom: 5vh;
+    background: rgba(0, 0, 0, 0.7);
+    width: 80vw;
+    flex: auto;
+}
+
+body.scroll {
+    background-image: url('TianjinNightBlur.jpg');
+    transition: all 0.4s ease;
+}
+
+video {
+    width: 70vw;
+    height: auto;
+    border: 10px solid #1d1d1d; /* 白色边框 */
+    border-radius: 10px; /* 圆角 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* 黑色阴影 */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+section p {
+    font-size: 1em;
+    padding: 5vw;
+}
