@@ -4,7 +4,7 @@ var placeholder = document.querySelector('.header-placeholder');
 var body = document.querySelector('body')
 
 window.addEventListener('scroll', function() {
-    if (window.pageYOffset > 50) {
+    if (window.pageYOffset > 10) {
         header.classList.add('scroll')
         fixedHeader.classList.add('scroll');
         body.classList.add('scroll');

@@ -5,7 +5,7 @@ body {
     background: rgba(0, 0, 0, 0.5);
     background-image: url('TianjinNight.jpg');
     background-size: cover;
-    background-position: top;
+    background-position: center;
     background-attachment: fixed;
     color: #fff;
     display: flex;
@@ -116,11 +116,12 @@ header.scroll {
 
 .header-placeholder.scroll {
     width: 100%;
-    height: 20vh;  /* 初始时与header高度相同 */
+    height: 30vh;  /* 初始时与header高度相同 */
     transition: all 0.4s ease;
 }
 
 header h1, nav {
+    padding: 3vw;
     transition: all 0.4s ease;
 }
 
