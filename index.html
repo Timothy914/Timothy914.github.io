@@ -24,8 +24,13 @@
                 <section>
                     <h2>UniDAO的起源</h2>
                     <p>下面的视频展示了DAO的运作机制以及UniDAO的理想形态。</p>
+<<<<<<< HEAD
                     <video controls>
                         <source src="UniDAO(avc).mp4" type="video/mp4">
+=======
+                    <video controls :src=src preload="auto">
+                        
+>>>>>>> 9d8ae75538e760d3a029f457112a998d5d561775
                         您的浏览器不支持视频标签。
                     </video>
                 </section>
@@ -51,4 +56,13 @@
     </div>
     <script src="action.js"></script>
 </body>
+<script>
+    export default {
+    data(){
+        return{
+            src: require("UniDAO展示（1080p）.mp4")
+        }
+    }
+    }
+</script>
 </html>
